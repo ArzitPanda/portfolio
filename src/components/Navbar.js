@@ -17,7 +17,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/works">Works</Link>
+          <a href="https://arzblogs.vercel.app/">Blogs</a>
         </li>
         <li>
           <Link to="/umm">garbage</Link>
