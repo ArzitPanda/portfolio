@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+.Photo_card_hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+
+  height: fit-content;
+  padding-left: 10px;
+  padding-right: 20px;
+  background: rgb(1, 1, 1);
+  background: linear-gradient(
+    327deg,
+    rgba(1, 1, 1, 1) 14%,
+    rgba(4, 4, 4, 1) 49%,
+    rgba(0, 0, 0, 0.116) 88%
+  );
+  transition: 0.6s ease;
+  border: 0.3px solid white;
+}
+
+.Photo_card_hero img {
+  padding: 20px;
+}
+.Photo_card_hero h3 {
+  text-transform: capitalize;
+  color: khaki;
+  font-family: "Montserrat", sans-serif;
+}
+.photo_hero {
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+.photo_hero video {
+  object-fit: cover;
+  width: 100vw;
+}
+
+.garbage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: khaki;
+  font-family: "Montserrat", sans-serif;
+  min-height: 200px;
+  padding-left: 140px;
+  padding-right: 150px;
+  font-size: 2rem;
+  text-align: center;
+  background-color: rgba(17, 43, 39, 0.089);
+}
+.garbage h4 {
+  font-size: 30px;
+  position: relative;
+  top: 32px;
+  font-family: "Dancing Script", cursive;
+  transition: 1s ease;
+}
+.garbage h4:hover {
+  cursor: pointer;
+  letter-spacing: 8px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+.Photo_card_hero:hover {
+  transform: translateX(2px);
+  transform: translateY(2px);
+  transform: scale(1.05);
+  transform: rotateZ(5deg);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.432) 0px 12px 13px, rgb(0, 0, 0) 0px -3px 10px;
+}
+
+@media (min-width: 1024px) {
+  .photo_hero {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .garbage {
+    padding: 0px;
+  }
+}

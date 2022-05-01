@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+.main_home {
+  margin-top: 20px;
+  height: 90vh;
+  width: 89vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: #000000; */
+}
+
+.typo h3 {
+  color: #800080;
+  width: 70vw;
+}
+
+@media (max-width: 900px) {
+  .main_home {
+    flex-direction: column-reverse;
+  }
+  .img-comp {
+    margin-top: 200px;
+    object-fit: contain;
+    transform: scale(0.8);
+    position: relative;
+  }
+
+  #react {
+    /* position:absolute; */
+    margin-left: 120px;
+  }
+}
+
+#panda {
+  width: 6rem;
+  margin-left: 26%;
+  bottom: 80px;
+  cursor: pointer;
+}
+#panda-t {
+  width: 6rem;
+  margin-left: 60%;
+  bottom: 80px;
+}
+.typo {
+  width: 50%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) all;
+}
+.typo h1 {
+  color: white;
+  cursor: pointer;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) all;
+}
+.typo h1:hover::after {
+  content: "--> A dev without coffee☕";
+  font-size: 30px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1) all;
+}
+
+.main_img {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  border-radius: 45%;
+  object-fit: contain;
+  left: 50px;
+  bottom: 38px;
+  background-color: #00000007;
+}
+
+#node {
+  position: relative;
+  top: 10%;
+  left: 12%;
+  background-color: #0e0c0c3d;
+}
+#java {
+  /* position: relative; */
+  height: 50px;
+  width: 50px;
+  top: 29%;
+  left: 82%;
+
+  background-color: #0e0c0c3d;
+  box-shadow: rgba(133, 56, 11, 0.966) -20px -10px 100px 0px,
+    rgba(182, 64, 43, 0.966) 0px 30px 60px -30px,
+    rgba(218, 39, 15, 0.35) 0px -2px 6px 0px inset;
+  transform-origin: left top 100px;
+  animation: rotate 20s ease infinite;
+}
+
+#java_logo {
+  position: relative;
+  left: 15%;
+  top: 16%;
+  background-color: #0e0c0c3d;
+}
+
+#react {
+  z-index: 4;
+  right: 10%;
+  bottom: 6%;
+  height: 150px;
+  width: 150px;
+  box-shadow: rgba(23, 11, 133, 0.966) -20px -10px 100px 0px,
+    rgba(64, 43, 182, 0.966) 0px 30px 60px -30px,
+    rgba(35, 15, 218, 0.35) 0px -2px 6px 0px inset;
+  transform-origin: left top 200px;
+  animation: rotate 60s infinite;
+}
+
+#react_logo {
+  position: relative;
+  top: 19%;
+  left: 15%;
+  animation: rotate 5s infinite;
+  background-color: #0e0c0c3d;
+}
+.icon-c {
+  display: flex;
+  background-color: #000000af;
+  height: 100px;
+  width: 100px;
+
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: rgba(11, 133, 96, 0.966) 0px 50px 100px -20px,
+    rgba(43, 182, 147, 0.966) 0px 30px 60px -30px,
+    rgba(22, 218, 15, 0.35) 0px -2px 6px 0px inset;
+  transform-origin: bottom right 100px;
+  animation: arotate 30s infinite;
+}
+
+#spring {
+  height: 110px;
+  width: 110px;
+  bottom: 10%;
+  z-index: 5;
+  transform-origin: 100px;
+  animation: rotate 50s infinite;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes arotate {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+#spring_logo {
+  position: relative;
+  top: 29%;
+  left: 25%;
+  animation: rotate 5s infinite;
+  background-color: #0e0c0c3d;
+}
+
+.bg-circle {
+  position: absolute;
+  /* position: absolute; */
+  background-color: #00000052;
+  width: 500px;
+  height: 500px;
+  border-radius: 450px;
+}
+@media (max-width: 1200px ,min-width:300px) {
+  .img-comp {
+    margin-top: 10px;
+
+    transform: scale(1);
+    position: relative;
+  }
+}
+
+@media (max-width: 450px) {
+  .bg-circle {
+    width: 120%;
+    height: 100%;
+    top: 50px;
+    left: 40px;
+  }
+  #react {
+    left: 35%;
+  }
+  .typo {
+    font-size: 10px;
+    width: min-content;
+
+    /* margin-top: 80px; */
+  }
+  .bg-circle {
+    filter: blur(7px);
+  }
+}

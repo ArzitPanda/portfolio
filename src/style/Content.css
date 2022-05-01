@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap");
+
+.card {
+  position: relative;
+  width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: rgba(29, 28, 28, 0.301);
+  background-image: linear-gradient(
+    to right,
+    rgba(29, 28, 28, 0.301),
+    rgba(0, 0, 0, 0.979)
+  );
+  box-shadow: rgb(0, 0, 0) 0px 20px 40px -10px;
+}
+.content_hero {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: max-content;
+}
+
+.project_list {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  line-height: 60px;
+  justify-content: space-around;
+  height: fit-content;
+  background-color: rgba(0, 0, 255, 0.068);
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.project_list::after {
+  content: "";
+  filter: blur(20px);
+}
+
+.project_list tr th {
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+  color: green;
+  background-color: rgba(24, 11, 11, 0.205);
+  width: 80vw;
+}
+
+.project_list tr td {
+  text-align: center;
+  width: 60vw;
+  background-color: rgba(255, 0, 119, 0.103);
+  border: none;
+}
+
+@media (max-width: 500px) {
+  .content {
+    position: relative;
+    /* top: 500px; */
+  }
+}
+
+.card p {
+  /* background-color: rgba(29, 28, 28, 0.116); */
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: rgba(204, 145, 57, 0.918);
+}
+
+.card .heading {
+  position: relative;
+
+  font-family: "Source Code Pro", monospace;
+  border: none;
+  /* background-color: blue; */
+}
+
+.card p {
+  position: relative;
+  top: 20px;
+}
+
+.heading:last-child {
+  top: 30px;
+}
+
+.content {
+  margin-top: 200px;
+  display: flex;
+  width: 100%;
+  /* background-color: mediumblue; */
+  align-items: center;
+  justify-content: space-around;
+
+  flex-wrap: wrap-reverse;
+}
