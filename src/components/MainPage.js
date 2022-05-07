@@ -20,9 +20,9 @@ const MainPage = () => {
         </h1>
 
         <h3>
-          I help designers, small agencies and businesses bring their ideas to
-          life. Powered by Figma, VS Code and coffee, I turn your requirements
-          into CMS-ified and ecommerce-ified websites - on time and on budget.
+          just a day dreamer,curious about life,
+          always ready to learn new things,and i can literally make you laugh😁
+          
         </h3>
       </div>
       <div className="img-comp">
