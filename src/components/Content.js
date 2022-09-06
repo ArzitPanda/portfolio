@@ -12,9 +12,9 @@ const Content = () => {
 
   const arr = [
     {
-      n: "student management system",
-      l: "spring,react",
-      link: "#"
+      n: "food ordering system (adv)",
+      l: "php,tailwind,html,js",
+      link: "https://github.com/ArzitPanda/swaad"
     },
     {
       n: "amazon clone",
@@ -76,7 +76,7 @@ const Content = () => {
             <tr className="project">
               <td>{elem.n}</td>
               <td>{elem.l}</td>
-              <td>{elem.link}</td>
+              <td><a href={elem.link}>click here</a></td>
             </tr>
           );
         })}
